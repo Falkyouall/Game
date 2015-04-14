@@ -17,35 +17,38 @@
     specific language governing permissions and limitations
     under the License.
 -->
-<html>
+<html ng-app="app">
 
     <head>
         <title>Hello World</title>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
 
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,  target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <script src="js/d3.js"></script>
-        <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no' />
 
         <link rel="stylesheet" href="js/libs/jquery-mobile/jquery.mobile.min.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+
         <script type="text/javascript" src="js/libs/jquery/jquery.js"></script>
         <script type="text/javascript" src="js/libs/jquery-mobile/jquery.mobile.min.js"></script>
+
         <script type="text/javascript" src="http://www.google.com/jsapi"></script>
 
-        <script src="js/index.js"></script>
-        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="js/libs/angular.js/angular.js"></script>
+        <script src="js/directives/mainDirectives.js"></script>
+        <script src="js/controller/mainController.js"></script>
 
 
     </head>
 
     <body>
-        <div>Hallo</div>
-        <button onclick="app.stuff()">Try it</button>
-        <script type="text/javascript" src="cordova.js"></script>
+        <canvas>
+            <div>Hallo</div>
+            <game ng-controller="gameController"></game>
+            
+            <button onclick="app.stuff()">Try it</button>
+
+        </canvas>
+        <script type="text/javascript" src="js/cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
-
-
     </body>
 </html>

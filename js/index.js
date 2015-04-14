@@ -16,6 +16,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
+//var app = angular.module('app', []);
+
 var app = {
 // Application Constructor
     initialize: function () {
@@ -51,7 +54,7 @@ var app = {
         } else {
             x = "You pressed Cancel!";
         }
-        document.getElementById("demo").innerHTML = x;
+       // document.getElementById("demo").innerHTML = x;
     }
 
 };
